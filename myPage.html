@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Flowers</title>
+    <link rel="stylesheet" href="../css/myStyles.css">
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+</head>
+<body onload="initViz()">
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href= "index.html">Home</a></li>
+                <li><a href="#roses">Roses</a></li>
+                <li><a href="#tulips">Tulips</a></li>
+                <li><a href="#lilies">Lilies</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>The World's Most Beautiful Flowers</h1>
+        <p>“There are always flowers for those who want to see them.”– Henri Matisse</p>
+    </div>
+
+<main>
+    <section id="roses">
+        <h2>Roses</h2>
+        <img src="assets/img/roses.jpeg" alt="Rose">
+        <p class="special">Most Popular Places Roses are Grown</p>
+        <div>
+            <ol class="list">
+                <li>Rose Valley, Bulgaria
+                    <ul>
+                        <li>Fun fact: Rose Valley, located in Bulgaria, is one of the largest producers of rose oil in the world. The region's mild climate and fertile soil provide optimal conditions for rose cultivation.</li>
+                    </ul>
+                </li>
+                <li>Isparta, Turkey
+                    <ul>
+                        <li>Fun fact: Isparta, known as the "City of Roses," is famous for its rose production, particularly the Damascus rose variety. The city's unique climate and soil composition contribute to the quality of its roses.</li>
+                    </ul>
+                </li>
+                <li>Provence, France
+                    <ul>
+                        <li>Fun fact: Provence, in the south of France, is renowned for its fields of fragrant lavender and roses. The region's sunny climate and well-drained soil create an ideal environment for growing roses.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="tulips">
+        <h2>Tulips</h2>
+        <img src="assets/img/tulips.jpeg" alt="Tulip">
+        <p class="special">Most Popular Places Tulips are Grown</p>
+        <div>
+            <ol class="list">
+                <li>Keukenhof Gardens, Netherlands
+                    <ul>
+                        <li>Fun fact: Keukenhof Gardens, located in the Netherlands, is one of the largest flower gardens in the world and is famous for its vibrant tulip displays.</li>
+                    </ul>
+                </li>
+                <li>Skagit Valley, Washington, USA
+                    <ul>
+                        <li>Fun fact: Skagit Valley in Washington state, USA, is known for its annual Tulip Festival, where visitors can enjoy acres of colorful tulip fields.</li>
+                    </ul>
+                </li>
+                <li>Emirgan Park, Istanbul, Turkey
+                    <ul>
+                        <li>Fun fact: Emirgan Park in Istanbul, Turkey, hosts a Tulip Festival every spring, showcasing thousands of tulips in various colors and varieties.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="lilies">
+        <h2>Lilies</h2>
+        <img src="assets/img/lilies.jpeg" alt="Lily">
+        <p class="special">Most Popular Places Lilies are Grown</p>
+        <div>
+            <ol class="list">
+                <li>Madagascar
+                    <ul>
+                        <li>Fun fact: Madagascar is home to several species of lilies, including the endemic Madagascar orchid lily (Angraecum sesquipedale), which has a unique relationship with the long-tongued moth for pollination.</li>
+                    </ul>
+                </li>
+                <li>Japan
+                    <ul>
+                        <li>Fun fact: Japan is famous for its traditional gardens, many of which feature lilies such as the Japanese lily (Lilium auratum) and the Japanese water lily (Lilium japonicum).</li>
+                    </ul>
+                </li>
+                <li>California, USA
+                    <ul>
+                        <li>Fun fact: California is known for its diverse flora, and lilies are no exception. The California lily (Lilium humboldtii) is native to the state and can be found in various habitats, from coastal bluffs to mountain slopes.</li>
+                    </ul>
+                </li>
+            </ol>
+            <div id="tableauViz"></div>
+    <script>
+        function initViz() {
+            var containerDiv = document.getElementById("tableauViz");
+            var url = "https://public.tableau.com/shared/NW2ZWT4H7?:display_count=n&:origin=viz_share_link";
+            var options = {
+                hideTabs: true,
+                hideToolbar: true,
+                width: "100%",
+                height: "800px"
+            };
+            var viz = new tableau.Viz(containerDiv, url, options);
+        }
+    </script>
+</main>
+
+<footer>
+    <h3>Learn more about Earth's Most Beautiful Flowers:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DU5joSi-bVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</footer>
+
+</body>
+</html>
